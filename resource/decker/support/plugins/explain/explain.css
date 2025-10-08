@@ -88,6 +88,7 @@ div#record-panel .toggle-button {
   font-size: 2rem;
   color: var(--foreground-color);
   transition: opacity 1s linear 0, color 0.5s linear 0;
+  cursor: pointer;
 }
 
 div#record-panel[data-uistate="RECORDING"] .toggle-button {

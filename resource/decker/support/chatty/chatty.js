@@ -114,7 +114,7 @@ function setup(anchor, reveal) {
   }
 
   // post initial bot message
-  newMessage("bot").add(Reveal ? l10n.greetingDeck : l10n.greeting);
+  newMessage("bot").add(window.Decker?.meta?.chatty?.greeting || (Reveal ? l10n.greetingDeck : l10n.greeting));
 }
 
 function newMessage(role) {
